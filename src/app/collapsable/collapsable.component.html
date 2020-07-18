@@ -1,0 +1,19 @@
+<div class="container">
+       
+    <h1>Collapsable tab example</h1>
+      
+    <p>
+      <button type="button" class="btn btn-outline-primary" (click)="isCollapsed = !isCollapsed"
+              [attr.aria-expanded]="!isCollapsed" aria-controls="collapseExample">
+        Collapse Toggle
+      </button>
+    </p>
+    <div id="collapseExample" [ngbCollapse]="isCollapsed">
+      <div class="card">
+        <div class="card-body">
+          You can collapse this card by clicking Toggle Button.
+        </div>
+      </div>
+    </div>
+      
+    </div>

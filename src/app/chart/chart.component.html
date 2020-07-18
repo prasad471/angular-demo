@@ -1,0 +1,17 @@
+<!-- <div id="chartContainer" style="height: 370px; width: 100%;"></div> -->
+
+<div class="control-section">
+    <div>
+        <ejs-stockchart id='stockChartDefault' [chartArea]='chartArea' [primaryXAxis]='primaryXAxis' style="display:block;"
+            [primaryYAxis]='primaryYAxis' [title]='title' [titleStyle]='titleStyle' [crosshair]='crosshair'
+            (tooltipRender)='tooltipRender($event)' [tooltip]='tooltip' (load)='load($event)'>
+            <e-stockchart-series-collection>
+                <e-stockchart-series [dataSource]='stockData' type='Candle' xName='x' yName='ns' ns='ns' nlr='nlr'>
+                </e-stockchart-series>
+            </e-stockchart-series-collection>
+        </ejs-stockchart>
+    </div>
+</div>
+
+<!-- <ejs-rangenavigator> </ejs-rangenavigator>
+<ejs-chart> </ejs-chart> -->
